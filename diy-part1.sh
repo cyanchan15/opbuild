@@ -20,4 +20,3 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 mkdir -p package/helloworld
 for i in "dns2socks" "microsocks" "ipt2socks" "pdnsd-alt" "redsocks2"; do svn checkout "https://github.com/immortalwrt/packages/trunk/net/$i" "package/helloworld/$i"; done
 
-cat $GITHUB_WORKSPACE/supportHyperV >> package/kernel/linux/modules/virt.mk
